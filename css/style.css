@@ -129,12 +129,13 @@ img {
 #contact h1 {
   font-family: 'Playfair Display', serif;
   color: #d94365;
-  font-size: 40px;
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 
 #contact p{
   color:#555;
-  font-size: 20px;
+  font-size: 1.1rem;
 }
 
 form label {
