@@ -6,3 +6,37 @@
     --box-shadow: 0 5px 10px rgba(0, 0, 0.4);
   }
   
+body {
+  font-family: "Playfair Display", serif;
+  line-height: 1.8;
+  color: var(--fourth-color);
+  background-color: var(--primary-color)
+}
+
+h1, h2 {
+color:var(--fourth-color);
+}
+.navbar {
+  font-size: medium;
+}
+.navbar-brand {
+  font-weight: bold;
+  color:var(--primary-color);
+}
+.nav-link {
+  color: var(--secondary-color)
+}
+.nav-link:hover {
+  color:var(--third-color)
+}
+.img-fluid {
+  max-width: 50%;
+  height: auto;
+}
+button {
+  background-color: var(--secondary-color);
+border: none;
+}
+button:hover {
+  background-color: var(--third-color);
+}
