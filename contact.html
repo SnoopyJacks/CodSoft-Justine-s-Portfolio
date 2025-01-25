@@ -21,36 +21,9 @@
     <title>Document</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
-        <div class="container">
-          <a class="navbar-brand" href="index.html">Justine Ziola</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-              <li class="nav-item">
-                <a class="nav-link" href="projects.html">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About Me</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+    <!-- Navbar Placeholder -->
+  <div id="navbar"></div>
+
       <br>
 <section id="contact" class=py-5>
     <div class="container">
@@ -88,10 +61,19 @@
     </form>
     </div>
     </section>
-</body>
 <footer>
     This portfolio was created and coded by <a href="https://github.com/SnoopyJacks">Justine Ziola</a>
     and is open-sourced on <a href="https://github.com/SnoopyJacks/Justine-s-Portfolio">GitHub</a>
-    and is hosted on <a href="justineziolaportfolio.netlify.app">Netlify.</a>
+    and is hosted on <a href="https://justineziolaportfolio.netlify.app">Netlify.</a>
   </footer>
+  <script>
+    // Load the navbar
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading navbar:', error));
+  </script>
+</body>
 </html>
