@@ -13,17 +13,20 @@
     <!-- Navbar Placeholder -->
   <div id="navbar"></div>
 
-      <br>
-<section id="contact" class=py-5>
+      
+<section id="contact" class="py-5 bg-light" >
     <div class="container">
-      <h1 class="text-center">Contact Me</h1>
-      <form class="mx-auto" style="max-width: 600px">
+      <h1 class="text-center mb-4">Contact Me</h1>
+      <p class="text-center mb-4 text-muted">
+        I would love to hear from you!! Whether it is about a project, a collaboration or just to say hi!
+      </p>
+      <form class="mx-auto p-4 rounded shadow-sm bg-white" style="max-width: 600px">
         <div class="mb-3">
       <label for="name" class="form-label"> Name</label>
       <input type="text"
       id="name"
       class="form-control"
-      placeholder="Name"
+      placeholder="Your Name"
       required
       />
         </div>
@@ -49,12 +52,16 @@
         <button type="submit" class="btn btn-primary w-100"> Send</button>
     </form>
     </div>
+    <p class="text-center mb-4 text-muted"></p>If you prefer to email me, you can do so at t.nichole.2807@gmail.com</p>
     </section>
-<footer>
+
+
+<footer class="text-center py-4">
     This portfolio was created and coded by <a href="https://github.com/SnoopyJacks">Justine Ziola</a>
     and is open-sourced on <a href="https://github.com/SnoopyJacks/Justine-s-Portfolio">GitHub</a>
     and is hosted on <a href="https://justineziolaportfolio.netlify.app">Netlify.</a>
   </footer>
+
   <script>
     // Load the navbar
     fetch('navbar.html')
