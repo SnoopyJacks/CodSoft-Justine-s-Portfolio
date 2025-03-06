@@ -41,7 +41,7 @@ img {
 }
 
 #projects {
-  padding: 40px 0;
+  padding: 40px 20px;
 }
 #projects .container {
   text-align: center;
@@ -49,20 +49,16 @@ img {
 }
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(1fr, 1fr);
   grid-template-rows: repeat(3, auto);
   gap: 20px;
   justify-content: center;
   max-width: 900px;
-  margin: auto;
 }
 .project-content {
-  display: flex;
   align-items: center;
 }
 .project-content img {
   width: 50%;
-  margin-right: 20px;
 }
 .project-content p {
   width: 50%
@@ -75,7 +71,7 @@ img {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  text-align: left;
+  text-align: center;
 }
 .project h3 {
   margin-bottom: 10px;
@@ -199,6 +195,9 @@ footer a {
 footer a:hover {
   color: #b63251;
   text-decoration: underline;
+}
+.text-center {
+  text-align: center;
 }
 #navbarNav {
   display: block !important;
