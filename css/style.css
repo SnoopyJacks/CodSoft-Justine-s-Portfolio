@@ -147,3 +147,14 @@ footer a:hover {
 .text-center {
   text-align: center;
 }
+#about .skills {
+  display:flex;
+  flex-wrap: wrap;
+}
+#about .grid {
+  list-style: none;
+  width: 50%
+}
+#about .grid li {
+  margin-bottom: 10px;
+}
